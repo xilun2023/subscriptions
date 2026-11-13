@@ -1,0 +1,569 @@
+# Clash Mi / Clash Meta (mihomo) 订阅配置
+# 由 9 条 vmess + 40 条 anytls 节点生成（2026-11-14）
+# 用法：在 Clash Mi / Clash Meta 里添加订阅/远程配置，粘贴订阅链接即可
+
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+proxies:
+- name: 🇭🇰 香港 01
+  type: vmess
+  server: 183.232.141.202
+  port: 14200
+  uuid: 2b8c50df-8820-d1c9-5351-5a3ec7286e14
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /66fc3fd5-286c-896a-93be-37561d42311f
+    headers:
+      Host: tms.dingtalk.com
+      User-Agent: DingTalk/54318050 CFNetwork/3826.600.41 Darwin/24.6.0
+- name: 🇭🇰 香港 02
+  type: vmess
+  server: 183.232.141.202
+  port: 14200
+  uuid: 2b8c50df-8820-d1c9-5351-5a3ec7286e14
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /e6500fa7-1033-2f73-e0b0-4733ac963927
+    headers:
+      Host: tms.dingtalk.com
+      User-Agent: DingTalk/54318050 CFNetwork/3826.600.41 Darwin/24.6.0
+- name: 🇭🇰 香港 03
+  type: vmess
+  server: 183.232.141.202
+  port: 14200
+  uuid: 2b8c50df-8820-d1c9-5351-5a3ec7286e14
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ab2ed73b-14e3-9063-8cfe-cb16af04d6b3
+    headers:
+      Host: tms.dingtalk.com
+      User-Agent: DingTalk/54318050 CFNetwork/3826.600.41 Darwin/24.6.0
+- name: 🇹🇼 台湾 01
+  type: vmess
+  server: 183.232.141.202
+  port: 14200
+  uuid: 2b8c50df-8820-d1c9-5351-5a3ec7286e14
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /f82d1b20-6e16-1391-39b3-1482b2df7fca
+    headers:
+      Host: tms.dingtalk.com
+      User-Agent: DingTalk/54318050 CFNetwork/3826.600.41 Darwin/24.6.0
+- name: 🇹🇼 台湾 02
+  type: vmess
+  server: 183.232.141.202
+  port: 14200
+  uuid: 2b8c50df-8820-d1c9-5351-5a3ec7286e14
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /a7e20269-e4d3-c97d-4a03-5fdb06d0e3ba
+    headers:
+      Host: tms.dingtalk.com
+      User-Agent: DingTalk/54318050 CFNetwork/3826.600.41 Darwin/24.6.0
+- name: 🇸🇬 新加坡 01
+  type: vmess
+  server: 183.232.141.202
+  port: 14200
+  uuid: 2b8c50df-8820-d1c9-5351-5a3ec7286e14
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /a80d5470-1be0-ab6e-675e-44a6e7abbc47
+    headers:
+      Host: tms.dingtalk.com
+      User-Agent: DingTalk/54318050 CFNetwork/3826.600.41 Darwin/24.6.0
+- name: 🇸🇬 新加坡 02
+  type: vmess
+  server: 183.232.141.202
+  port: 14200
+  uuid: 2b8c50df-8820-d1c9-5351-5a3ec7286e14
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /70ae0ebf-0ca0-1054-b94e-455eaf18d563
+    headers:
+      Host: tms.dingtalk.com
+      User-Agent: DingTalk/54318050 CFNetwork/3826.600.41 Darwin/24.6.0
+- name: 🇯🇵 日本 01
+  type: vmess
+  server: 183.232.141.202
+  port: 14200
+  uuid: 2b8c50df-8820-d1c9-5351-5a3ec7286e14
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /1be4f50f-5c38-ad18-e5b9-006d48cbcf03
+    headers:
+      Host: tms.dingtalk.com
+      User-Agent: DingTalk/54318050 CFNetwork/3826.600.41 Darwin/24.6.0
+- name: 🇯🇵 日本 02
+  type: vmess
+  server: 183.232.141.202
+  port: 14200
+  uuid: 2b8c50df-8820-d1c9-5351-5a3ec7286e14
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /68b841cc-040f-6bce-a5d7-2e5d840edcfe
+    headers:
+      Host: tms.dingtalk.com
+      User-Agent: DingTalk/54318050 CFNetwork/3826.600.41 Darwin/24.6.0
+- name: 🇭🇰 HK 01
+  type: anytls
+  server: dlg-hk.dlg365.com
+  port: 51401
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: jd.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 HK 02
+  type: anytls
+  server: dlg-hk.dlg365.com
+  port: 51402
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: oracle.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 HK 03
+  type: anytls
+  server: dlg-hk.dlg365.com
+  port: 51403
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: fanke.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 HK 04
+  type: anytls
+  server: dlg-hk.dlg365.com
+  port: 51404
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: alipay.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 HK 05
+  type: anytls
+  server: dlg-hk.dlg365.com
+  port: 51405
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: weibo.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 HK 06
+  type: anytls
+  server: dlg-hk.dlg365.com
+  port: 51406
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: zbj.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 HK 07
+  type: anytls
+  server: dlg-hk.dlg365.com
+  port: 51407
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: vue.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 HK 09
+  type: anytls
+  server: dlg-hk.dlg365.com
+  port: 51409
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: qq.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 HK 08
+  type: anytls
+  server: dlg-hk.dlg365.com
+  port: 51408
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: baidu.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 HK 10
+  type: anytls
+  server: dlg-hk.dlg365.com
+  port: 51410
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 SG 01
+  type: anytls
+  server: dlg-sg.dlg365.com
+  port: 51411
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 SG 02
+  type: anytls
+  server: dlg-sg.dlg365.com
+  port: 51412
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 SG 03
+  type: anytls
+  server: dlg-sg.dlg365.com
+  port: 51413
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 SG 04
+  type: anytls
+  server: dlg-sg.dlg365.com
+  port: 51414
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 SG 05
+  type: anytls
+  server: dlg-sg.dlg365.com
+  port: 51415
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 SG 06
+  type: anytls
+  server: dlg-sg.dlg365.com
+  port: 51416
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 SG 08
+  type: anytls
+  server: dlg-sg.dlg365.com
+  port: 51418
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 SG 07
+  type: anytls
+  server: dlg-sg.dlg365.com
+  port: 51417
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 SG 09
+  type: anytls
+  server: dlg-sg.dlg365.com
+  port: 51419
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 SG 10
+  type: anytls
+  server: dlg-sg.dlg365.com
+  port: 51420
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 JP 01
+  type: anytls
+  server: dlg-jp.dlg365.com
+  port: 51421
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 JP 02
+  type: anytls
+  server: dlg-jp.dlg365.com
+  port: 51422
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 JP 03
+  type: anytls
+  server: dlg-jp.dlg365.com
+  port: 51423
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 JP 04
+  type: anytls
+  server: dlg-jp.dlg365.com
+  port: 51424
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 JP 06
+  type: anytls
+  server: dlg-jp.dlg365.com
+  port: 51426
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 JP 05
+  type: anytls
+  server: dlg-jp.dlg365.com
+  port: 51425
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 JP 07
+  type: anytls
+  server: dlg-jp.dlg365.com
+  port: 51427
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 JP 08
+  type: anytls
+  server: dlg-jp.dlg365.com
+  port: 51428
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 JP 09
+  type: anytls
+  server: dlg-jp.dlg365.com
+  port: 51429
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 JP 10
+  type: anytls
+  server: dlg-jp.dlg365.com
+  port: 51430
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 US 01
+  type: anytls
+  server: dlg-us.dlg365.com
+  port: 51431
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 US 02
+  type: anytls
+  server: dlg-us.dlg365.com
+  port: 51432
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 US 03
+  type: anytls
+  server: dlg-us.dlg365.com
+  port: 51433
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 US 04
+  type: anytls
+  server: dlg-us.dlg365.com
+  port: 51434
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 US 05
+  type: anytls
+  server: dlg-us.dlg365.com
+  port: 51435
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳 TW 01
+  type: anytls
+  server: dlg-tw.dlg365.com
+  port: 51441
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳 TW 02
+  type: anytls
+  server: dlg-tw.dlg365.com
+  port: 51442
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳 TW 03
+  type: anytls
+  server: dlg-tw.dlg365.com
+  port: 51443
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳 TW 04
+  type: anytls
+  server: dlg-tw.dlg365.com
+  port: 51444
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳 TW 05
+  type: anytls
+  server: dlg-tw.dlg365.com
+  port: 51445
+  password: 247e833f-214d-42ea-ba05-bc1cac92a31c
+  sni: 360.com
+  skip-cert-verify: true
+  udp: true
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🇭🇰 香港 01
+  - 🇭🇰 香港 02
+  - 🇭🇰 香港 03
+  - 🇹🇼 台湾 01
+  - 🇹🇼 台湾 02
+  - 🇸🇬 新加坡 01
+  - 🇸🇬 新加坡 02
+  - 🇯🇵 日本 01
+  - 🇯🇵 日本 02
+  - 🇭🇰 HK 01
+  - 🇭🇰 HK 02
+  - 🇭🇰 HK 03
+  - 🇭🇰 HK 04
+  - 🇭🇰 HK 05
+  - 🇭🇰 HK 06
+  - 🇭🇰 HK 07
+  - 🇭🇰 HK 09
+  - 🇭🇰 HK 08
+  - 🇭🇰 HK 10
+  - 🇸🇬 SG 01
+  - 🇸🇬 SG 02
+  - 🇸🇬 SG 03
+  - 🇸🇬 SG 04
+  - 🇸🇬 SG 05
+  - 🇸🇬 SG 06
+  - 🇸🇬 SG 08
+  - 🇸🇬 SG 07
+  - 🇸🇬 SG 09
+  - 🇸🇬 SG 10
+  - 🇯🇵 JP 01
+  - 🇯🇵 JP 02
+  - 🇯🇵 JP 03
+  - 🇯🇵 JP 04
+  - 🇯🇵 JP 06
+  - 🇯🇵 JP 05
+  - 🇯🇵 JP 07
+  - 🇯🇵 JP 08
+  - 🇯🇵 JP 09
+  - 🇯🇵 JP 10
+  - 🇺🇸 US 01
+  - 🇺🇸 US 02
+  - 🇺🇸 US 03
+  - 🇺🇸 US 04
+  - 🇺🇸 US 05
+  - 🇨🇳 TW 01
+  - 🇨🇳 TW 02
+  - 🇨🇳 TW 03
+  - 🇨🇳 TW 04
+  - 🇨🇳 TW 05
+  - DIRECT
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇭🇰 香港 01
+  - 🇭🇰 香港 02
+  - 🇭🇰 香港 03
+  - 🇹🇼 台湾 01
+  - 🇹🇼 台湾 02
+  - 🇸🇬 新加坡 01
+  - 🇸🇬 新加坡 02
+  - 🇯🇵 日本 01
+  - 🇯🇵 日本 02
+  - 🇭🇰 HK 01
+  - 🇭🇰 HK 02
+  - 🇭🇰 HK 03
+  - 🇭🇰 HK 04
+  - 🇭🇰 HK 05
+  - 🇭🇰 HK 06
+  - 🇭🇰 HK 07
+  - 🇭🇰 HK 09
+  - 🇭🇰 HK 08
+  - 🇭🇰 HK 10
+  - 🇸🇬 SG 01
+  - 🇸🇬 SG 02
+  - 🇸🇬 SG 03
+  - 🇸🇬 SG 04
+  - 🇸🇬 SG 05
+  - 🇸🇬 SG 06
+  - 🇸🇬 SG 08
+  - 🇸🇬 SG 07
+  - 🇸🇬 SG 09
+  - 🇸🇬 SG 10
+  - 🇯🇵 JP 01
+  - 🇯🇵 JP 02
+  - 🇯🇵 JP 03
+  - 🇯🇵 JP 04
+  - 🇯🇵 JP 06
+  - 🇯🇵 JP 05
+  - 🇯🇵 JP 07
+  - 🇯🇵 JP 08
+  - 🇯🇵 JP 09
+  - 🇯🇵 JP 10
+  - 🇺🇸 US 01
+  - 🇺🇸 US 02
+  - 🇺🇸 US 03
+  - 🇺🇸 US 04
+  - 🇺🇸 US 05
+  - 🇨🇳 TW 01
+  - 🇨🇳 TW 02
+  - 🇨🇳 TW 03
+  - 🇨🇳 TW 04
+  - 🇨🇳 TW 05
+rules:
+- MATCH,🚀 节点选择
