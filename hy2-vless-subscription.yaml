@@ -450,6 +450,9 @@ rules:
 - DOMAIN-SUFFIX,aistudio.google.com,🤖 AI 节点
 - DOMAIN-SUFFIX,generativelanguage.googleapis.com,🤖 AI 节点
 - DOMAIN-SUFFIX,ai.google.dev,🤖 AI 节点
+- DOMAIN-SUFFIX,googleapis.com,🤖 AI 节点
+- DOMAIN-SUFFIX,google.com,🤖 AI 节点
+- DOMAIN-SUFFIX,gstatic.com,🤖 AI 节点
 - DOMAIN-SUFFIX,chatgpt.com,🤖 AI 节点
 - DOMAIN-SUFFIX,openai.com,🤖 AI 节点
 - DOMAIN-SUFFIX,claude.ai,🤖 AI 节点
