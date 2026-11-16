@@ -436,5 +436,25 @@ proxy-groups:
   - 🇫🇷法国-巴黎02
   - 🇹🇭泰国-曼谷01
   - 🇹🇭泰国-曼谷02
+- name: 🤖 AI 节点
+  type: select
+  proxies:
+  - 🇹🇼台湾-动态|家宽01
+  - 🇹🇼台湾-动态|家宽02
+  - 🇹🇼台湾-静态|家宽01
+  - 🇹🇼台湾-静态|家宽02
+  - 🇰🇷韩国-家宽|2倍率01
+  - 🇰🇷韩国-家宽|2倍率02
 rules:
+- DOMAIN-SUFFIX,gemini.google.com,🤖 AI 节点
+- DOMAIN-SUFFIX,aistudio.google.com,🤖 AI 节点
+- DOMAIN-SUFFIX,generativelanguage.googleapis.com,🤖 AI 节点
+- DOMAIN-SUFFIX,ai.google.dev,🤖 AI 节点
+- DOMAIN-SUFFIX,chatgpt.com,🤖 AI 节点
+- DOMAIN-SUFFIX,openai.com,🤖 AI 节点
+- DOMAIN-SUFFIX,claude.ai,🤖 AI 节点
+- DOMAIN-SUFFIX,anthropic.com,🤖 AI 节点
+- DOMAIN-SUFFIX,grok.com,🤖 AI 节点
+- DOMAIN-SUFFIX,x.ai,🤖 AI 节点
+- DOMAIN-KEYWORD,gemini,🤖 AI 节点
 - MATCH,🚀 节点选择
