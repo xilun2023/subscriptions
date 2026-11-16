@@ -1,0 +1,440 @@
+# Clash Mi / Clash Meta (mihomo) 订阅配置
+# 由 17 条 vless (Reality) + 13 条 hysteria2 节点生成（2026-11-17）
+# 用法：在 Clash Mi / Clash Meta 里添加订阅/远程配置，粘贴订阅链接即可
+
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+proxies:
+- name: 🇺🇸美国-凤凰城01
+  type: hysteria2
+  server: mg0.zhujue.us
+  port: 20501
+  password: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  sni: mg0.zhujue.us
+  skip-cert-verify: true
+  up: 10000 Mbps
+  down: 10000 Mbps
+- name: 🇺🇸美国-凤凰城02
+  type: vless
+  server: mg0.zhujue.us
+  port: 9443
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: IpxCnrSB2gTQBLB_attb6-ZmEXL_o_FLukC-_F_9dRw
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇺🇸美国-洛杉矶01
+  type: hysteria2
+  server: mg390.zhujue.us
+  port: 20501
+  password: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  sni: mg390.zhujue.us
+  skip-cert-verify: true
+  up: 1000 Mbps
+  down: 1000 Mbps
+- name: 🇺🇸美国-洛杉矶02
+  type: vless
+  server: mg390.zhujue.us
+  port: 9443
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: IpxCnrSB2gTQBLB_attb6-ZmEXL_o_FLukC-_F_9dRw
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇭🇰香港-HKT01
+  type: hysteria2
+  server: xg.zhujue.us
+  port: 20501
+  password: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  sni: xg.zhujue.us
+  skip-cert-verify: true
+  up: 1000 Mbps
+  down: 1000 Mbps
+- name: 🇭🇰香港-HKT02
+  type: vless
+  server: xg.zhujue.us
+  port: 9443
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇭🇰香港-中环01
+  type: vless
+  server: xg3.zhujue.us
+  port: 9443
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇭🇰香港-中环02
+  type: vless
+  server: xg3.zhujue.us
+  port: 9443
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇹🇼台湾-动态|家宽01
+  type: vless
+  server: tw999.zhujue.us
+  port: 20500
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇹🇼台湾-动态|家宽02
+  type: vless
+  server: tw999.zhujue.us
+  port: 20500
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇹🇼台湾-静态|家宽01
+  type: vless
+  server: tw0.zhujue.us
+  port: 10000
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇹🇼台湾-静态|家宽02
+  type: vless
+  server: tw0.zhujue.us
+  port: 10000
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇰🇷韩国-家宽|2倍率01
+  type: vless
+  server: hg.zhujue.us
+  port: 10001
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇰🇷韩国-家宽|2倍率02
+  type: vless
+  server: hg.zhujue.us
+  port: 10001
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇯🇵日本-东京01
+  type: vless
+  server: rb2.zhujue.us
+  port: 9443
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇯🇵日本-东京02
+  type: vless
+  server: rb2.zhujue.us
+  port: 9443
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇯🇵日本·流媒体01
+  type: hysteria2
+  server: rb.zhujue.us
+  port: 20501
+  password: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  sni: rb.zhujue.us
+  skip-cert-verify: true
+  up: 500 Mbps
+  down: 500 Mbps
+- name: 🇯🇵日本·流媒体02
+  type: hysteria2
+  server: rb.zhujue.us
+  port: 20501
+  password: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  sni: rb.zhujue.us
+  skip-cert-verify: true
+  up: 500 Mbps
+  down: 500 Mbps
+- name: 🇸🇬 新加坡-高速01
+  type: vless
+  server: xjp.zhujue.us
+  port: 9443
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡-高速02
+  type: vless
+  server: xjp.zhujue.us
+  port: 9443
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇺🇸美国-高速01
+  type: hysteria2
+  server: mg.zhujue.us
+  port: 20501
+  password: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  sni: mg.zhujue.us
+  skip-cert-verify: true
+  up: 1000 Mbps
+  down: 1000 Mbps
+- name: 🇺🇸美国-高速02
+  type: vless
+  server: mg.zhujue.us
+  port: 9443
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇺🇸美国-高速0.1倍率1
+  type: hysteria2
+  server: mg1.zhujue.us
+  port: 20501
+  password: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  sni: mg1.zhujue.us
+  skip-cert-verify: true
+  up: 1000 Mbps
+  down: 1000 Mbps
+- name: 🇺🇸美国-高速0.1倍率2
+  type: hysteria2
+  server: mg1.zhujue.us
+  port: 20501
+  password: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  sni: mg1.zhujue.us
+  skip-cert-verify: true
+  up: 1000 Mbps
+  down: 1000 Mbps
+- name: 🇩🇪德国-法兰克福01
+  type: hysteria2
+  server: dg.zhujue.us
+  port: 20501
+  password: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  sni: dg.zhujue.us
+  skip-cert-verify: true
+  up: 1000 Mbps
+  down: 1000 Mbps
+- name: 🇩🇪德国-法兰克福02
+  type: hysteria2
+  server: dg.zhujue.us
+  port: 20501
+  password: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  sni: dg.zhujue.us
+  skip-cert-verify: true
+  up: 1000 Mbps
+  down: 1000 Mbps
+- name: 🇫🇷法国-巴黎01
+  type: hysteria2
+  server: fg.zhujue.us
+  port: 20501
+  password: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  sni: fg.zhujue.us
+  skip-cert-verify: true
+  up: 1000 Mbps
+  down: 1000 Mbps
+- name: 🇫🇷法国-巴黎02
+  type: hysteria2
+  server: fg.zhujue.us
+  port: 20501
+  password: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  sni: fg.zhujue.us
+  skip-cert-verify: true
+  up: 1000 Mbps
+  down: 1000 Mbps
+- name: 🇹🇭泰国-曼谷01
+  type: hysteria2
+  server: tg.zhujue.us
+  port: 20501
+  password: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  sni: tg.zhujue.us
+  skip-cert-verify: true
+  up: 1000 Mbps
+  down: 1000 Mbps
+- name: 🇹🇭泰国-曼谷02
+  type: vless
+  server: tg.zhujue.us
+  port: 9443
+  uuid: c4650f01-7b7e-496d-bccf-f3a59a83e28c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: s0.awsstatic.com
+  reality-opts:
+    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
+    short-id: ''
+  client-fingerprint: chrome
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🇺🇸美国-凤凰城01
+  - 🇺🇸美国-凤凰城02
+  - 🇺🇸美国-洛杉矶01
+  - 🇺🇸美国-洛杉矶02
+  - 🇭🇰香港-HKT01
+  - 🇭🇰香港-HKT02
+  - 🇭🇰香港-中环01
+  - 🇭🇰香港-中环02
+  - 🇹🇼台湾-动态|家宽01
+  - 🇹🇼台湾-动态|家宽02
+  - 🇹🇼台湾-静态|家宽01
+  - 🇹🇼台湾-静态|家宽02
+  - 🇰🇷韩国-家宽|2倍率01
+  - 🇰🇷韩国-家宽|2倍率02
+  - 🇯🇵日本-东京01
+  - 🇯🇵日本-东京02
+  - 🇯🇵日本·流媒体01
+  - 🇯🇵日本·流媒体02
+  - 🇸🇬 新加坡-高速01
+  - 🇸🇬 新加坡-高速02
+  - 🇺🇸美国-高速01
+  - 🇺🇸美国-高速02
+  - 🇺🇸美国-高速0.1倍率1
+  - 🇺🇸美国-高速0.1倍率2
+  - 🇩🇪德国-法兰克福01
+  - 🇩🇪德国-法兰克福02
+  - 🇫🇷法国-巴黎01
+  - 🇫🇷法国-巴黎02
+  - 🇹🇭泰国-曼谷01
+  - 🇹🇭泰国-曼谷02
+  - DIRECT
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇺🇸美国-凤凰城01
+  - 🇺🇸美国-凤凰城02
+  - 🇺🇸美国-洛杉矶01
+  - 🇺🇸美国-洛杉矶02
+  - 🇭🇰香港-HKT01
+  - 🇭🇰香港-HKT02
+  - 🇭🇰香港-中环01
+  - 🇭🇰香港-中环02
+  - 🇹🇼台湾-动态|家宽01
+  - 🇹🇼台湾-动态|家宽02
+  - 🇹🇼台湾-静态|家宽01
+  - 🇹🇼台湾-静态|家宽02
+  - 🇰🇷韩国-家宽|2倍率01
+  - 🇰🇷韩国-家宽|2倍率02
+  - 🇯🇵日本-东京01
+  - 🇯🇵日本-东京02
+  - 🇯🇵日本·流媒体01
+  - 🇯🇵日本·流媒体02
+  - 🇸🇬 新加坡-高速01
+  - 🇸🇬 新加坡-高速02
+  - 🇺🇸美国-高速01
+  - 🇺🇸美国-高速02
+  - 🇺🇸美国-高速0.1倍率1
+  - 🇺🇸美国-高速0.1倍率2
+  - 🇩🇪德国-法兰克福01
+  - 🇩🇪德国-法兰克福02
+  - 🇫🇷法国-巴黎01
+  - 🇫🇷法国-巴黎02
+  - 🇹🇭泰国-曼谷01
+  - 🇹🇭泰国-曼谷02
+rules:
+- MATCH,🚀 节点选择
