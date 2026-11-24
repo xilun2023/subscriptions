@@ -2,6 +2,7 @@
 # 与昨天的 65 节点配置相同：11 条 vmess + 8 条 vless (Reality) + 6 条 hysteria2 + 40 条 anytls（2026-11-19）
 # AI 分组：除香港外的 48 个节点（Gemini 不支持香港），台湾家宽优先
 # 自动选择：url-test，每 5 分钟测延迟，自动用延迟最低的节点
+# 国内直连：GEOIP,CN,DIRECT，微信/抖音等国内流量不走代理
 # 用法：在 Clash Meta 里添加订阅/远程配置，粘贴订阅链接即可；添加后可在订阅设置里开启自动更新
 
 port: 7890
@@ -864,4 +865,5 @@ rules:
 - DOMAIN-SUFFIX,grok.com,🤖 AI 节点
 - DOMAIN-SUFFIX,x.ai,🤖 AI 节点
 - DOMAIN-KEYWORD,gemini,🤖 AI 节点
+- GEOIP,CN,DIRECT
 - MATCH,🚀 节点选择
